@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet" />
+
+    <title>Welcome to My Portfolio</title>
+    <p>Passionate B.Tech student showcasing my work and projects.</p>
+  </head>
+  <body>
+
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Abhishek Mishra</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#Resume" class="nav__link">Resume</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contactme</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+
+      
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Abhishek Mishra</span
+            ><br />
+            Software Engineer
+          </h1>
+
+          <a href="#" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-behance"></i
+          ></a>
+          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
+        <div class="home__img">
+          <svg
+          class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                <image class="home__blob-img" xlink:href="{{ url_for('static', filename='image (4).jpg') }}" x="0" y="0" />
+              </g>
+
+          </svg>
+        </div>
+      
+        <div id="particles-js"></div>
+
+
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="{{ url_for('static', filename='about.jpg') }}" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'am Abhishek Mishra</h2>
+            <p class="about__text">
+              As a beginner in network security, I am excited to start my
+              journey in this dynamic and challenging field. Although I am new
+              to the industry, I have a strong interest in computer networks and
+              cybersecurity, and I am eager to learn more about how to protect
+              networks from threats and attacks I have recently completed a few
+              online courses in network security, which have given me a solid
+              foundation in the principles and practices of network security. I
+              have learned about the different types of cyber threats, security
+              protocols, and security tools used to secure networks, such as
+              firewalls, intrusion detection systems, and encryption. While I
+              may not have much practical experience in network security, I am a
+              fast learner and am eager to put my knowledge into practice. I
+              have 1 year of experience in marketing and I am doing so many
+              project related in cybersecurity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text"></p>
+            <p></p>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <ol>
+                  <li>Programming Languages: Python, C++</li>
+                  <li>Web Development: HTML, CSS, JavaScript</li>
+                  <li>Frameworks: React,</li>
+                  <li>Database: SQL,</li>
+                  <li>Version Control: Git</li>
+                  <li>Ethical hacking</li>
+                  <li>IOT</li>
+                  <li>Design thinking</li>
+                  <li>Machine learning</li>
+                  <li>Ethics In Engineering Practice</li>
+                  <li>linux</li>
+                  <li>Phishing attack</li>
+                  <li>cybersecurity</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">Ethical Hacking</span>
+              </div>
+              <div class="skills__bar skills__eh"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="{{ url_for('static', filename='work3.jpg') }}" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+      <section id="education"class="bd-grid">
+        <div class="education">
+          <h2>Education</h2>
+          <p>Bachelor of Technology in Computer Science and Engineering</p>
+          <br />
+          <p>Panipat insitute of Engineering &amp; Technology| 3rd year</p>
+          <br />
+          <p>GPA: 8.4/7.5</p>
+        </div>
+      </section>
+      <section id="projects" class="bd-grid">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Mail phishing attack</h3>
+          <p>
+            As a fervent supporter of digital security and ethical hacking, I
+            have devoted my efforts to increasing awareness of phishing attacks
+            and advocating for robust cybersecurity practices. Phishing attacks,
+            which aim to deceive individuals into disclosing sensitive
+            information, pose a significant threat in today's digital landscape.
+            My commitment to fostering a safer online environment has driven my
+            involvement in various initiatives and projects.
+            <br />
+            Through my multifaceted efforts, I strive to create a culture of
+            cyber vigilance and equip individuals with the knowledge needed to
+            navigate the digital realm securely. By empowering users to make
+            informed decisions and adopt proactive measures, I am dedicated to
+            contributing to a safer online experience for all.
+          </p>
+
+          <h3>Smart Attendance</h3>
+
+          <p>
+            we focused mainly QR code implementation. Subsequently the data is
+            recorded to database for retrieval purposes. If students is absent
+            for below 80% a warning message will be sent to students, parents.
+            Every student is provided with an QR code on their Id card, which
+            was registered already in database by the management. Student should
+            scan their ID card to mark their presence.
+          </p>
+
+          <br />
+
+          <b>Problem</b>
+          <p>
+            Regular attendance system are mainly imposed in schools, colleges.
+            Taking attendance by university instructors it’s a time killing
+            process when they are classes are big.
+          </p>
+          <br />
+          <b>Solution</b>
+          <p>
+            Smartphone play a major role in educational sector. There are so
+            many technologies to take students attendance. A few are QR,
+            biometrics, Face recognition etc.
+          </p>
+          <h3>Graphical user interfaces calculator</h3>
+          <h3>To do list<b>(TaskTrackr)</b></h3>
+          <a href="#">Demo</a> 
+          <a href="#">https://github.com/abhishek9880/CODSOFT</a>
+        </div>
+        <!-- Repeat the above 'project' section for each project -->
+      </section>
+      <section id="achievements"class="bd-grid">
+        <div class="achievements">
+          <br>
+          <h2>Achievements</h2>
+          <ul>
+            <li>Best leadership award</li>
+            <li>1st place in technoinnovation in Software project</li>
+            <li>IIT python language certification</li>
+            <li>IIT C language certification</li>
+            <li>IIT Ethical hacking certifiaction</li>
+            <br>
+            <p>And lots of <b>Software Events Participation Certificate</b> and <b>Business Idea Representation Certificate</b>: Actively engaged in cutting-edge software events,&busines events  workshops, and seminars, fostering continuous learning, networking, and staying updated with evolving industry trends. </p> <!-- Add more achievements as needed -- />
+          </ul>
+        </div>
+      </section>
+
+          <!---------services---------->
+<div id="services">
+  <div class="container">
+      <h1 class="sub-title">My Services</h1>
+     <div class="services-list">
+      <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p> I am a passionate web designer dedicated to crafting captivating online experiences that blend aesthetics with functionality. My portfolio showcases a diverse range of projects, from e-commerce platforms to personal blogs, all designed with meticulous attention to user experience and responsive layouts. Using HTML, CSS, and JavaScript, I create interactive elements that engage users and convey messages effectively. Let's collaborate to turn ideas into visually stunning digital realities.
+            
+            Feel free to customize and adjust the description to better suit your style and the specific projects you have in your portfoli
+              </p>
+              
+      </div>
+      <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Cybersecurity Guidance </h2>
+          <p>Embark with me on an odyssey into the dynamic realm of cybersecurity, where my journey as a dedicated student reflects my profound passion for safeguarding the digital frontier.
+
+            From the inception of my educational voyage, I recognized the paramount importance of cybersecurity in our interconnected world. Fuelled by this awareness, I have wholeheartedly immersed myself in comprehending core concepts such as networks, encryption, and the art of ethical hacking.
+              </p>
+              <a href="#">Learn more</a>
+      </div>
+      <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>Blog and Content Writting</h2>
+          <p>Welcome to my portfolio, where words come to life. I specialize in crafting compelling blog posts and captivating content that inform, engage, and leave a lasting impression. With a meticulous attention to detail and a flair for creativity, I bring ideas to fruition through well-researched narratives. From cybersecurity insights to emerging technology trends, each piece is tailored to educate and spark meaningful conversations. Join me in exploring the dynamic world of content where knowledge meets storytell
+              </p>
+              <a href="#">Learn more</a>
+      </div>
+       </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="{{ url_for('submit') }}" method="post" class="contact__form">
+            <input type="text" name="username" placeholder="Name" class="contact__input" />
+            <input type="email" name="email" placeholder="Email" class="contact__input" />
+            <textarea
+              name="message"
+              cols="0"
+              rows="10"
+              class="contact__input"></textarea>
+            <input
+              type="submit"
+              value="Submit"
+              class="contact__button button"/>
+          </form>
+        </div>
+      </section>
+    
+      <section id="Resume" class="contact__container">
+        <!-- ... (other content) ... -->
+        <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank" class="contact__button">
+          View Resume
+        </a>
+      </section>
+      
+      
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <div class="modeSwitch__container">
+        <h3>Light/Dark Mode Switch</h3>
+        <label class="switch">
+          <input type="checkbox" id="modeSwitch">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <p class="footer__title">Abhishek Mishra</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <p class="footer__copy">&#169; Abhishek Mishra. All rigths reserved</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="{{ url_for('static', filename='particles.min.js') }}"></script>
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', "{{ url_for('static', filename='particles.json') }}", function() {
+  console.log('callback - particles.js config loaded');
+});
+    </script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>
